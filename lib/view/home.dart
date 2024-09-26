@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:oneres_newuiversion/gen/fonts.gen.dart';
 import 'package:oneres_newuiversion/utils/colorutils.dart';
 import 'package:oneres_newuiversion/view/checkbox/checkbox.dart';
+import 'package:oneres_newuiversion/view/datetime/datatimewidget.dart';
 import 'package:oneres_newuiversion/view/drawer/drawerpage.dart';
 import 'package:oneres_newuiversion/view/listable_menu/listable_menu.dart';
 import 'package:oneres_newuiversion/view/popmenu/popmenu.dart';
@@ -376,6 +377,28 @@ class MyHome extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => const PopMenuPage()),
+                    );
+                  },
+                  child: const Text(
+                    'Menu Drop',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontFamily: FontFamily.timesNewRoman),
+                  ),
+                ),
+              )),
+          Container(
+              width: 80,
+              height: 50,
+              color: ColorTheme.colorButton,
+              child: Align(
+                alignment: Alignment.center,
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const DateTimeWidget()),
                     );
                   },
                   child: const Text(

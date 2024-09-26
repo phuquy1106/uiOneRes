@@ -76,6 +76,7 @@ dependencies:
   shimmer: ^3.0.0
   vibration: ^1.8.1
   context_menus: ^1.0.2
+  board_datetime_picker: ^1.4.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -98,11 +99,9 @@ flutter:
     # the material Icons class.
   uses-material-design: true
   assets:
-      - assets/data/
       - assets/fonts/
       - assets/img/
       - assets/icon/
-      - assets/sound/
       - assets/animation/
       - assets/icons/
       - assets/items/
